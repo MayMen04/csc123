@@ -11,7 +11,6 @@ public class ShoppingCartManager {
 		int amount = 0;
 		String name;
 		String vendor;
-		String type;
 		double price;
 		double cost;
 		double weight;
@@ -93,7 +92,10 @@ public class ShoppingCartManager {
 			System.out.println("Total: "+total+"$\n");
 			menu();
 			break;
-		case 3: break;
+		case 3: 
+			System.out.println("Thank you for using the program");
+			input.close();
+			break;
 		}
 	}
 }
