@@ -34,7 +34,7 @@ public class ShoppingCart {
 		this.cost = cost;
 		this.weight = weight;
 		total = this.price * taxRate;
-		total = Math.round(total*100)/100;
+		total = Math.floor(total*100)/100;
 		
 	}
 	public ShoppingCart(String name, String vendor, Date sellBy, Date useBy, double price, double cost, double weight) {
@@ -47,7 +47,7 @@ public class ShoppingCart {
 		this.sellby = df.format(sellBy);
 		this.useby = df.format(useBy);
 		total = this.price * taxRate;
-		total = Math.round(total*100)/100;
+		total = Math.floor(total*100)/100;
 	}
 	double getTotal() {
 		return total;

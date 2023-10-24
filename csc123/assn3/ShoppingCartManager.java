@@ -58,7 +58,7 @@ public class ShoppingCartManager {
 			}while(true);
 			switch(newChoice) {
 			case 1: 
-				System.out.print("Author: ");
+				System.out.print("\nAuthor: ");
 				author = input.next();
 				System.out.print("Publication month: ");
 				pMonth = input.next();
@@ -67,7 +67,7 @@ public class ShoppingCartManager {
 				itemList.add(new ShoppingCart(name, vendor, author, pMonth, pageNum, price, cost, weight));
 				break;
 			case 2: 
-				System.out.println("Sell by (mm/dd/yyyy): ");
+				System.out.println("\nSell by (mm/dd/yyyy): ");
 				sellBy = df.parse(input.next());
 				System.out.println("Use by (mm/dd/yyyy): ");
 				useBy = df.parse(input.next());
